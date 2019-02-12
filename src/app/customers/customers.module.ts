@@ -4,6 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { CustomersRoutingModule } from './customers-routing.module';
 import { CustomerListComponent } from './customer-list/customer-list.component';
+import { CustomerCardComponent } from './customer-card/customer-card.component';
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+
 
 const routes: Routes = [
   {
@@ -15,8 +21,13 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    CustomersRoutingModule
+    CustomersRoutingModule,
+
+    // Material
+    MatButtonModule,
+    MatCardModule,
+    MatIconModule,
   ],
-  declarations: [CustomerListComponent]
+  declarations: [CustomerListComponent, CustomerCardComponent]
 })
 export class CustomersModule { }
