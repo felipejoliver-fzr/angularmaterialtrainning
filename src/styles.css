@@ -5,3 +5,8 @@
 body{
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
+.example-tooltip {
+    font-size: 90%;
+    background: darkgray;
+}
